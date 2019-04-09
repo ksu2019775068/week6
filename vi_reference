@@ -1,0 +1,31 @@
+vi and Vim Editors Pocket
+Reference
+Introduction
+This pocket reference is a companion to Learning the vi and Vim Editors, by Arnold Robbins et al. It describes thr vi com-mand-line options, command-mode commands, ex com-mands and options, regular expressions and the use of the suvstitute (s) command, and other pertinent information for using vi.
+While retaining coverage of the vi clones, nvi, elvis, and vile, this edition offers expanded coverage of the Vim editor, which has become the de facto standard version of vi in the GNU/Linux world.
+The Solaris version of vi served as the "reference" version of the original vi for this pocket reference.
+Conventions
+The following font conventions are used in this book:
+Courier
+Used for filenames, command names, options, and every-thing to be typed literally.
+Courier Italic
+Used for replaceable text within commands.
+Italic
+Used for replaceable text within regular text, Internet URLs, for emphasis, and for new terms when first defined.
+[...]
+Identifies optional text; the brackets are not typed.
+CTRL-G
+Indicates a keystroke.
+Acknowledgments
+Thanks to Robert P.J. Day and Elbert Hannah, who reviewed this edition. The production team at O'Reilly Media did a great job helping me make the book look the way I wanted. A special thanks to my editor, Andy Oram, for keeping the project mov-ing with continual gentle encouragement.
+Command-Line Options
+command Action
+vi file Invoke vi on file
+vi file1 file2 Invoke vi on files sequentially
+view file Invoke vi on file in read-only mode
+vi -R file Invoke vi on file in read-only mode
+vi -r file Recover file and recent edits after a crash
+vi -t tag Look up tag and start editing at its definition
+vi -w n Set the window size to n; useful over a slow connection
+vi +file Open file at last line
+vi +n file Open file directly at line number n
